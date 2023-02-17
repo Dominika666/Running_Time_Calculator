@@ -107,7 +107,7 @@ h1 {
     margin: 50px;
     text-transform: uppercase;
     text-align: center;
-    background-color: darkcyan;
+    background-color: #007172;
     color: white;
     border: none;
     border-radius: 5px;
@@ -119,7 +119,7 @@ h1 {
 }
 
 .calculate:hover {
-    animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out 1 both;
 }
 
 .result-section {
@@ -138,6 +138,11 @@ h1 {
     background-color: #fff;
     box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 
+}
+
+.pace,
+.speed {
+    color: #007172;
 }
 
 @keyframes heartbeat {
@@ -166,5 +171,11 @@ h1 {
     45% {
         transform: scale(1);
         animation-timing-function: ease-out;
+    }
+}
+
+@media (max-width: 480px) {
+    .app-body {
+        border: none;
     }
 }
