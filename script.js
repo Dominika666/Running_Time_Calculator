@@ -10,8 +10,8 @@ const pace = document.querySelector('.pace');
 const speed = document.querySelector('.speed');
 
 
-
 const calculate = () => {
+
     const newHours = parseFloat(hoursInput.value);
     const newMinutes = parseFloat(minutesInput.value);
     const newSeconds = parseFloat(secondsInput.value);
@@ -19,30 +19,23 @@ const calculate = () => {
 
     console.log(newDistance)
 
-    const totalTime = () => {
-        newHours * 60 + newMinutes + newSeconds / 60;
-
-    }
-
-    const newPace = () => {
-        totalTime / newDistance;
-    }
+    const totalTime = (newHours * 60) + newMinutes + (newSeconds / 60);
+    console.log(totalTime);
 
 
+    const paceResult = totalTime.toFixed(2) / newDistance;
+    pace.textContent = paceResult.toFixed(2);
+    console.log(paceResult);
 
-}
+    const speedTime = newDistance / (totalTime/60)
+    speed.textContent = speedTime.toFixed(2);
+    console.log(speedTime);
 
-//calculateBtn.addEventListener("click", calculate)
-console.log(newDistance)
+};
 
-// const calculate = () => {
-//     ...onds = parseFloat(secondsInput.value);
-//     const totalTime = newHours + newMinutes * (1 / 60) + newSecon...
-//     );
-//     const paceResult = (parseFloat(distanceInput.value) / totalTime).toFixed(2);
-//     speed.textContent = paceResult + " km/h";
-//     pace.textContent = ((1 / paceResult) * 60).toFixed(2) + " min";
-//     };
+calculateBtn.addEventListener('click', calculate);
+
+
 
 
 

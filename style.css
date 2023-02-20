@@ -89,6 +89,7 @@ h1 {
     border: 1px solid #000;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color .3s;
 }
 
 .distance-input:hover {
@@ -101,7 +102,7 @@ h1 {
 }
 
 .calculate {
-    display: inline-block;
+
     width: 120px;
     height: 40px;
     margin: 50px;
@@ -109,17 +110,18 @@ h1 {
     text-align: center;
     background-color: #007172;
     color: white;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     font-size: 18px;
     cursor: pointer;
-    animation: none;
-
 
 }
 
 .calculate:hover {
-    animation: heartbeat 1.5s ease-in-out 1 both;
+    background-color: #fff;
+    color: #007172;
+
 }
 
 .result-section {
@@ -145,34 +147,7 @@ h1 {
     color: #007172;
 }
 
-@keyframes heartbeat {
-    from {
 
-        transform: scale(1);
-        transform-origin: center center;
-        animation-timing-function: ease-out;
-    }
-
-    10% {
-        transform: scale(0.91);
-        animation-timing-function: ease-in;
-    }
-
-    17% {
-        transform: scale(0.98);
-        animation-timing-function: ease-out;
-    }
-
-    33% {
-        transform: scale(0.87);
-        animation-timing-function: ease-in;
-    }
-
-    45% {
-        transform: scale(1);
-        animation-timing-function: ease-out;
-    }
-}
 
 @media (max-width: 480px) {
     .app-body {
