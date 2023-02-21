@@ -12,37 +12,51 @@
 
 <body>
     <div class="app-body">
-        <h1>running pace calculator</h1>
+        <h1>Running Pace Calculator</h1>
 
         <div class="time-area">
-            <h3>time</h3>
+            <h3>Time</h3>
             <div class="time-inputs">
-                <input type="number" placeholder="h" value="0" class="hours" id="hrs" >
+                <input type="number" placeholder="h" value="" class="hours" id="hrs">
 
-                <input type="number" placeholder="m" value="0" class="minutes" id="min" >
+                <input type="number" placeholder="m" value="" class="minutes" id="min">
 
-                <input type="number" placeholder="s" value="0" class="seconds" id="sec" >
-
+                <input type="number" placeholder="s" value="" class="seconds" id="sec">
             </div>
 
-            <div class="distance-area">
-                <h3>distance</h3>
-                <input type="number" placeholder="km" value="0" class="distance-input" id="distance" >
+        </div>
+        <div class="distance-area">
+            <div class="time-area-standard">
+                <h3>Standard distance</h3>
+                <select name="standardDistance" class="option-distance">
+                    <option value="" disabled selected>Choose distance</option>
+                    <option value="1">1km</option>
+                    <option value="5">5km</option>
+                    <option value="10">10km</option>
+                    <option value="21.097">Półmaraton</option>
+                    <option value="42.195">Maraton</option>
+                </select>
             </div>
 
-            <div class="btn">
-                <button class="calculate">oblicz</button>
-            </div>
 
-            <div class="result-section">
-                <p>pace: <span class="pace"></span>/km</p>
-                <p>speed: <span class="speed"></span>km/h</p>
-
-            </div>
+            <h3>Distance</h3>
+            <input type="number" placeholder="km" value="" class="distance-input" id="distance">
         </div>
 
+        <div class="btn">
+            <button class="calculate">Oblicz</button>
+        </div>
 
-        <script src="script.js"></script>
+        <div class="result-section">
+            <p>Pace: <span class="pace"></span>/km</p>
+            <p>Speed: <span class="speed"></span>km/h</p>
+
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
 </body>
 
 </html>
