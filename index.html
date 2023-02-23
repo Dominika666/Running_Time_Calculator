@@ -17,19 +17,19 @@
         <div class="time-area">
             <h3>Time</h3>
             <div class="time-inputs">
-                <input type="number" placeholder="h" value="" class="hours" id="hrs">
+                <input type="number" placeholder="h"  value="0" class="hours input" id="hrs">
 
-                <input type="number" placeholder="m" value="" class="minutes" id="min">
+                <input type="number" placeholder="m"  value="0" class="minutes input" id="min">
 
-                <input type="number" placeholder="s" value="" class="seconds" id="sec">
+                <input type="number" placeholder="s"  value="0" class="seconds input" id="sec">
             </div>
 
         </div>
         <div class="distance-area">
             <div class="time-area-standard">
                 <h3>Standard distance</h3>
-                <select name="standardDistance" class="option-distance">
-                    <option value="" disabled selected>Choose distance</option>
+                <select id="standard-distance" class="input">
+                    <option value="0" selected>Choose distance</option>
                     <option value="1">1km</option>
                     <option value="5">5km</option>
                     <option value="10">10km</option>
@@ -39,12 +39,12 @@
             </div>
 
 
-            <h3>Distance</h3>
+            <h3>Your distance</h3>
             <input type="number" placeholder="km" value="" class="distance-input" id="distance">
         </div>
 
         <div class="btn">
-            <button class="calculate">Oblicz</button>
+            <button class="calculate">Calculate</button>
         </div>
 
         <div class="result-section">

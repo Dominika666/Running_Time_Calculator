@@ -49,7 +49,7 @@ h1 {
 .distance-area h3 {
     width: 30%;
     margin: auto;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
 
 }
@@ -73,6 +73,7 @@ h1 {
     border: none;
     outline: none;
     cursor: pointer;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
 }
 
 .time-area input:hover {
@@ -124,7 +125,7 @@ h1 {
     text-align: center;
 }
 
-.option-distance {
+#standard-distance {
     width: 150px;
     height: 35px;
     margin: 10px;
@@ -134,10 +135,11 @@ h1 {
     border: none;
     cursor: pointer;
     background-color: #fff;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     transition: background-color .3s;
 }
 
-.option-distance:hover {
+#standard-distance:hover {
     background-color: #eeeee4;
 }
 
@@ -146,7 +148,7 @@ h1 {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-top: 30px;
+    margin: 10px;
 }
 
 .distance-input {
@@ -158,6 +160,7 @@ h1 {
     cursor: pointer;
     border: none;
     outline: none;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
     transition: background-color .3s;
 }
 
@@ -171,7 +174,7 @@ h1 {
 }
 
 .calculate {
-    width: 90px;
+    width: 130px;
     height: 35px;
     margin: 25px;
     text-align: center;
@@ -179,7 +182,7 @@ h1 {
     color: white;
     font-weight: bold;
     border: none;
-    border-radius: 5px;
+    border-radius: 30px;
     font-size: 18px;
     cursor: pointer;
     transition: background-color .3s;
