@@ -13,6 +13,7 @@ body {
     font-family: 'Lato', sans-serif;
     background-image: url(running.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .app-body {
@@ -29,27 +30,21 @@ h1 {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 10px;
     color: white;
     font-weight: bold;
+    letter-spacing: 1px;
 
 }
 
-.time-area h3 {
-    width: 30%;
-    margin: auto;
-    padding: 10px;
-    text-align: center;
-
-
-}
-
+.time-area h3,
 .distance-area h3 {
-    width: 30%;
-    margin: auto;
+    width: 100%;
     padding: 5px;
     text-align: center;
-
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: 1px;
 }
 
 .time-area {
@@ -59,7 +54,6 @@ h1 {
 .time-inputs {
     display: flex;
     justify-content: center;
-
 }
 
 .time-area input {
@@ -85,13 +79,6 @@ h1 {
     align-items: center;
 }
 
-.time-area-standard h3 {
-    width: 40%;
-    margin: 5px auto;
-    padding: 10px;
-    text-align: center;
-}
-
 .option-distance {
     width: 130px;
     height: 35px;
@@ -111,12 +98,9 @@ h1 {
 
 .time-area-standard {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-.time-area-standard h3 {
     width: 100%;
     margin: 5px auto;
     padding: 10px;
@@ -187,8 +171,26 @@ h1 {
 }
 
 .calculate:hover {
-    background-color: #038b8d;
+    background-color: #31a0a1;
+}
 
+.cancel {
+    width: 130px;
+    height: 35px;
+    margin: 25px;
+    text-align: center;
+    background-color: #e64444;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 30px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color .3s;
+}
+
+.cancel:hover {
+    background-color: #e96666;
 }
 
 .result-section {
@@ -198,25 +200,41 @@ h1 {
 }
 
 .result-section p {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 10px;
-    border: 1px solid none;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    font-size: 24px;
+    padding-top: 20px;
 
 }
 
 .pace,
 .speed {
-    color: #007172;
+    color: #e73838;
+    font-size: 28px;
+    font-weight: bold;
 }
-
 
 
 @media (max-width: 480px) {
     .app-body {
         border: none;
+        box-shadow: none;
+    }
+
+    h1 {
+        font-size: 28px;
+        color: black;
+    }
+
+    .time-area h3,
+    .distance-area h3 {
+        font-size: 14px;
+    }
+
+    .result-section p {
+        font-size: 20px;
+    }
+
+    .pace,
+    .speed {
+        font-size: 24px;
     }
 }

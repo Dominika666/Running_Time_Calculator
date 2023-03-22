@@ -5,6 +5,7 @@ const secondsInput = document.querySelector('.seconds-input');
 const distanceInput = document.querySelector('#distance');
 
 const calculateBtn = document.querySelector('.calculate');
+const cancelBtn = document.querySelector('.cancel')
 
 const pace = document.querySelector('.pace');
 const speed = document.querySelector('.speed');
@@ -61,9 +62,20 @@ const calculate = () => {
 
 };
 
+const clearInputs =()=> {
+  pace.textContent = '';
+  speed.textContent = '';
+  hoursInput.value = '';
+  minutesInput.value = '';
+  secondsInput.value = '';
+  standardDistance.value = 0;
+  distanceInput.value = '';
+}
+
 
 calculateBtn.addEventListener('click', calculate);
-standardDistance.addEventListener('input', disableInputs)
+cancelBtn.addEventListener('click', clearInputs)
+standardDistance.addEventListener('input', disableInputs);
 
 
 
